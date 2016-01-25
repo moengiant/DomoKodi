@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<settings>
+    <category label="10000">
+        <setting label="10001" type="lsep"/>
+        <setting label="10002" id="Server_ip" type="ipaddress" default="0.0.0.0"/>
+        <setting label="10003" id="Server_port" type="number" default="0"/>
+        <setting label="10004" id="Server_user" type="text" default=""/>
+        <setting label="10005" id="Server_pword" type="text" option="hidden" default=""/>
+        <setting label="14001" type="lsep"/>
+        <setting label="14002" id="night_mode" type="labelenum" values="Yes|No" default="No"/>
+        <setting label="14003" id="night_on_time" type="slider" default="18" range="0,1,23" option="int" enable="eq(-1,0)" visible="eq(-1,0)"/>
+        <setting label="14004" id="night_off_time" type="slider" default="6" range="0,1,23" option="int"  enable="eq(-2,0)" visible="eq(-2,0)"/>
+        <setting label="14005" type="lsep"/>
+        <setting label="14006" id="degub_mode_state" type="labelenum" values="Yes|No" default="Yes"/>
+    </category>
+	<category label="11000">
+        <setting label="11001" type="lsep"/> 
+        <setting label="12001" id="video_started" type="labelenum" values="Yes|No" default="No"/>
+        <setting label="13001" id="video_start_gid" type="number" default="" enable="eq(-1,0)" visible="eq(-1,0)"/>
+
+        <setting label="11002" type="lsep"/> 
+        <setting label="12002" id="video_paused" type="labelenum" values="Yes|No" default="No"/>
+        <setting label="13001" id="video_pause_gid" type="number" default="" enable="eq(-1,0)" visible="eq(-1,0)"/>
+
+        <setting label="11003" type="lsep"/> 
+        <setting label="12003" id="video_resumed" type="labelenum" values="Yes|No" default="No"/>
+        <setting label="13001" id="video_resume_gid" type="number" default="" enable="eq(-1,0)" visible="eq(-1,0)"/>
+
+        <setting label="11004" type="lsep"/> 
+        <setting label="12004" id="video_stopped" type="labelenum" values="Yes|No" default="No"/>
+        <setting label="13001" id="video_stop_gid" type="number" default="" enable="eq(-1,0)" visible="eq(-1,0)"/>
+
+        <setting label="11005" type="lsep"/> 
+        <setting label="12005" id="video_ended" type="labelenum" values="Yes|No" default="No"/>
+        <setting label="13001" id="video_end_gid" type="number" default="" enable="eq(-1,0)" visible="eq(-1,0)"/>
+    </category>
+	<category label="15000">
+        <setting label="15001" type="lsep"/> 
+        <setting label="16001" id="audio_started" type="labelenum" values="Yes|No" default="No"/>
+        <setting label="13001" id="audio_start_gid" type="number" default="" enable="eq(-1,0)" visible="eq(-1,0)"/>
+
+        <setting label="15002" type="lsep"/> 
+        <setting label="16002" id="audio_paused" type="labelenum" values="Yes|No" default="No"/>
+        <setting label="13001" id="audio_pause_gid" type="number" default="" enable="eq(-1,0)" visible="eq(-1,0)"/>
+
+        <setting label="15003" type="lsep"/> 
+        <setting label="16003" id="audio_resumed" type="labelenum" values="Yes|No" default="No"/>
+        <setting label="13001" id="audio_resume_gid" type="number" default="" enable="eq(-1,0)" visible="eq(-1,0)"/>
+
+        <setting label="15004" type="lsep"/> 
+        <setting label="16004" id="audio_stopped" type="labelenum" values="Yes|No" default="No"/>
+        <setting label="13001" id="audio_stop_gid" type="number" default="" enable="eq(-1,0)" visible="eq(-1,0)"/>
+
+        <setting label="15005" type="lsep"/> 
+        <setting label="16005" id="audio_ended" type="labelenum" values="Yes|No" default="No"/>
+        <setting label="13001" id="audio_end_gid" type="number" default="" enable="eq(-1,0)" visible="eq(-1,0)"/>
+    </category>
+    <category label="17000">
+        <setting label="17001" type="lsep"/>
+        <setting label="17002" id="short_active" type="labelenum" values="Yes|No" default="No"/>
+        <setting label="17003" type="lsep" visible="eq(-1,0)"/>
+        <setting label="17004" id="short_1_active" type="labelenum" values="Yes|No" default="No" enable="eq(-2,0)" visible="eq(-2,0)"/>
+        <setting label="17005" id="short_1_name" type="text" default="" enable="eq(-1,0) + eq(-3,0)" visible="eq(-1,0) + eq(-3,0)"/>
+        <setting label="17006" id="short_1_gid" type="text" default="" enable="eq(-2,0) + eq(-4,0)" visible="eq(-2,0) + eq(-4,0)"/>
+        <setting label="17031" id="short_1_win" type="labelenum" values="None|Movies - Recently Added|Movies - Titles|TV Shows - Titles|Music - Videos|Music - Playlists|Music - Albums|Music - Artists" default="None" enable="eq(-3,0) + eq(-5,0)" visible="eq(-3,0) + eq(-5,0)"/>
+        <setting label="17007" type="lsep" visible="eq(-6,0)"/>
+        <setting label="17008" id="short_2_active" type="labelenum" values="Yes|No" default="No" enable="eq(-7,0)" visible="eq(-7,0)"/>
+        <setting label="17009" id="short_2_name" type="text" default="" enable="eq(-1,0) + eq(-8,0)" visible="eq(-1,0) + eq(-8,0)"/>
+        <setting label="17010" id="short_2_gid" type="text" default="" enable="eq(-2,0) + eq(-9,0)" visible="eq(-2,0) + eq(-9,0)"/>
+        <setting label="17032" id="short_2_win" type="labelenum" values="None|Movies - Recently Added|Movies - Titles|TV Shows - Titles|Music - Videos|Music - Playlists|Music - Albums|Music - Artists" default="None"  enable="eq(-3,0) + eq(-10,0)" visible="eq(-3,0) + eq(-10,0)"/>
+        <setting label="17011" type="lsep" visible="eq(-11,0)"/>
+        <setting label="17012" id="short_3_active" type="labelenum" values="Yes|No" default="No" enable="eq(-12,0)" visible="eq(-12,0)"/>
+        <setting label="17013" id="short_3_name" type="text" default="" enable="eq(-1,0) + eq(-13,0)" visible="eq(-1,0) + eq(-13,0)"/>
+        <setting label="17014" id="short_3_gid" type="text" default="" enable="eq(-2,0) + eq(-14,0)" visible="eq(-2,0) + eq(-14,0)"/>
+        <setting label="17033" id="short_3_win" type="labelenum" values="None|Movies - Recently Added|Movies - Titles|TV Shows - Titles|Music - Videos|Music - Playlists|Music - Albums|Music - Artists" default="None"  enable="eq(-3,0) + eq(-15,0)" visible="eq(-3,0) + eq(-15,0)"/>
+        <setting label="17015" type="lsep" visible="eq(-16,0)"/>
+        <setting label="17016" id="short_4_active" type="labelenum" values="Yes|No" default="No" enable="eq(-17,0)" visible="eq(-17,0)"/>
+        <setting label="17017" id="short_4_name" type="text" default="" enable="eq(-1,0) + eq(-18,0)" visible="eq(-1,0) + eq(-18,0)"/>
+        <setting label="17018" id="short_4_gid" type="text" default="" enable="eq(-2,0) + eq(-19,0)" visible="eq(-2,0) + eq(-19,0)"/>
+        <setting label="17034" id="short_4_win" type="labelenum" values="None|Movies - Recently Added|Movies - Titles|TV Shows - Titles|Music - Videos|Music - Playlists|Music - Albums|Music - Artists" default="None"  enable="eq(-3,0) + eq(-20,0)" visible="eq(-3,0) + eq(-20,0)"/>
+        <setting label="17019" type="lsep" visible="eq(-21,0)"/>
+        <setting label="17020" id="short_5_active" type="labelenum" values="Yes|No" default="No" enable="eq(-22,0)" visible="eq(-22,0)"/>
+        <setting label="17021" id="short_5_name" type="text" default="" enable="eq(-1,0) + eq(-23,0)" visible="eq(-1,0) + eq(-23,0)"/>
+        <setting label="17022" id="short_5_gid" type="text" default="" enable="eq(-2,0) + eq(-24,0)" visible="eq(-2,0) + eq(-24,0)"/>
+        <setting label="17035" id="short_5_win" type="labelenum" values="None|Movies - Recently Added|Movies - Titles|TV Shows - Titles|Music - Videos|Music - Playlists|Music - Albums|Music - Artists" default="None"  enable="eq(-3,0) + eq(-25,0)" visible="eq(-3,0) + eq(-25,0)"/>
+    </category>
+</settings>
