@@ -76,7 +76,7 @@ def Domoticz_direct( ip = hip, port = hport, username = huser, password = hpword
             print("Domoticz Addon - Settings: Server Port Not Set")
         else:
             if ( password != ""):
-                url = 'http://%s:%s\@%s:%s/json.htm?type=command&param=switchscene&idx=%s&switchcmd=On' % (user,password,ip,port,command)            
+                url = 'http://%s:%s\@%s:%s/json.htm?type=command&param=switchscene&idx=%s&switchcmd=On' % (username,password,ip,port,command)            
             else:
                 url = 'http://%s:%s/json.htm?type=command&param=switchscene&idx=%s&switchcmd=On' % (ip,port,command)
                 if (username ==""):
